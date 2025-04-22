@@ -3,12 +3,27 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import { seoData } from "@/data/SeoData";
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: "NANA MARBLE",
-	description: "welcome!",
+	title: seoData.indexTitle,
+	description: seoData.indexDescription,
+	openGraph: {
+		title: seoData.indexTitle,
+		description: seoData.indexDescription,
+		url: "http://www.nanamarble.com",
+		type: "website",
+		images: [
+			{
+				url: "",
+				width: 1200,
+				height: 630,
+				alt: "",
+			}
+		]
+	}
 };
 
 export default function RootLayout({
