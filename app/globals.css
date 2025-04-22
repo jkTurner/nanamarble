@@ -1,8 +1,84 @@
 @import "tailwindcss";
 
+@theme {
+	--color-primary: #171717;
+	--color-secondary: #FFFFFF;
+	--color-bgMain: #F5F5F5;
+	--color-accent: #DBA771;
+	--color-textLight: #6E6E6E;
+	--color-textKill: #ADADAD;
+
+	--text-xs: 14px;
+	--text-sm: 16px;
+	--text-md: 18px;
+	--text-lg: 24px;
+	--text-xl: 40px;
+
+	--spacing-xxs: 8px;
+	--spacing-xs: 18px;
+	--spacing-sm: 24px;
+	--spacing-md: 32px;
+	--spacing-lg: 40px;
+	--spacing-xl: 48px;
+	--spacing-2xl: 60px;
+	--spacing-3xl: 80px;
+
+	--breakpoint-desktop: 1280px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--primary: #171717;
+	--secondary: #FFFFFF;
+	--bgMain: #F5F5F5;
+	--accent: #DBA771;
+	--textLight: #6E6E6E;
+	--textKill: #ADADAD;
+
+ 	--text-xs: 14px;
+	--text-sm: 16px;
+	--text-md: 18px;
+	--text-lg: 24px;
+	--text-xl: 40px;
+
+	--weight-extralight: 200;
+	--weight-light: 300;
+	--weight-normal: 400;
+	--weight-medium: 500;
+	--weight-semibold: 600;
+	--weight-bold: 700;
+	--weight-extrabold: 800;
+
+	--spacing-xxs: 8px;
+	--spacing-xs: 18px;
+	--spacing-sm: 24px;
+	--spacing-md: 32px;
+	--spacing-lg: 40px;
+	--spacing-xl: 48px;
+	--spacing-2xl: 60px;
+
+	--desktop: 1280px;
+}
+
+@layer base {
+	body {
+		background-color: var(--bgMain);
+		color: var(--primary);
+		font-size: var(--text-sm);
+	}
+	p, li {
+		color: var(--textLight);
+		font-size: var(--text-xs);
+	}
+	h1 {
+		font-size: var(--text-lg);
+	}
+	h2 {
+		/* font-weight: var(--weight-semibold); */
+		color: var(--textLight);
+	}
+	input, textarea, select {
+		outline: none;
+	}
 }
 
 @theme inline {
@@ -14,13 +90,51 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary: #171717;
+    --secondary: #FFFFFF;
+    --bgMain: #F5F5F5;
+    /* --bgMain: #292828;
+    --primary: #FFFFFF;
+    --secondary: #171717; */
+    --accent: #DBA771;
+    --textLight: #6E6E6E;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.mainLayout {
+	width: 100%;
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cardContainer {
+	width: 100%;
+	max-width: 1280px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+	gap: var(--spacing-sm);
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+.innerContainer {
+	width: 100%;
+	max-width: var(--desktop);
+	margin-inline: auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
 }

@@ -1,0 +1,27 @@
+
+
+.navItem {
+    display: flex;
+    align-items: center;
+}
+
+.navItem a {
+    position: relative;
+}
+
+.navItem a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navItem a:hover::after {
+    transform: scaleX(1);
+}
