@@ -37,7 +37,7 @@ const Footer = () => {
                     <Navbar />
                     <div className="flex flex-col text-xs font-light md:items-end items-center">
                         <span>© Nana Marble Inc. All rights reserved</span>
-                        <span>By JK Turner Fullstack</span>
+                        <span className="text-xs">By JK Turner Fullstack</span>
                     </div>
                 </div>
 

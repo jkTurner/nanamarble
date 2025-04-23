@@ -66,7 +66,7 @@ const AboutPage = () => {
                         <div className="flex h-[400px] md:h-auto md:flex-1 relative">
                             <div className="w-[50%] relative">
                                 <Image
-                                    src="/images/image-018.jpg"
+                                    src="/images/image-024.png?=v2"
                                     alt="later"
                                     fill
                                     className="object-cover overflow-hidden"

@@ -47,7 +47,7 @@ export const portfolioData = [
 ]
 
 export const aboutData = {
-    image: "/images/image-020.jpg",
+    image: "/images/image-023.png",
     whoWeAre: "Rooted in Chiang Mai, Trusted Nationwide",
     whoWeAreDetail: "Founded in the heart of Chiang Mai over 25 years ago, Nana Marble has grown from a small local supplier into one of Thailand’s most trusted names in premium marble. From family homes to large-scale developments, we’ve helped shape beautiful spaces with the timeless elegance of natural stone.",
     whatWeDo: "What Wo Do",
