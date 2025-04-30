@@ -17,7 +17,7 @@ const PortfolioCard: React.FC<PortfolioCardProp> = ({ place, location, detail, i
                     <h3 className="font-semibold text-[var(--textLight)]">{place}</h3>
                     <p className="text-[var(--textLight)] text-xs italic">{location}</p>
                 </div>
-                <p>{detail}</p>
+                <p className="font-thai line-clamp-3">{detail}</p>
             </div>
 
             {/* image */}

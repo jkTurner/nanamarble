@@ -16,14 +16,17 @@ const AboutPage = () => {
 
                     {/* left column */}
                     <div className="flex flex-col gap-sm pl-sm pr-sm md:pr-0 md:w-[50%] w-full">
-                        <h1 id="about-heading">About Nana Marble</h1>
-                        <h2 className="text-[var(--primary)]">{about.whoWeAre}</h2>
-                        <p>{about.whoWeAreDetail}</p>
-                        <p>
+                        <h1 id="about-heading">{about.topicEn} <span className="font-thai">{about.topic}</span></h1>
+                        <h2 className="font-thai text-[var(--primary)]">{about.whoWeAre}</h2>
+                        <p className="font-thai">{about.whoWeAreDetail}</p>
+                        {/* <p className="font-thai">
                             Learn more about our <a href="/services" className="underline">services</a> or <a href="/contact" className="underline">get in touch</a> for a quote.
+                        </p> */}
+                        <p className="font-thai">
+                            เรียนรู้เพิ่มเติมเกี่ยวกับ <a href="/services" className="underline">บริการของเรา</a> หรือ <a href="/contact" className="underline">ติดต่อเราเพื่อขอคำปรึกษา</a>.
                         </p>
-                        <h2 className="text-[var(--primary)]">{about.whatWeDo}</h2>
-                        <p>{about.whatWeDoDetail}</p>
+                        <h2 className="text-[var(--primary)]">{about.whatWeDoEn} <span className="font-thai">{about.whatWeDo}</span></h2>
+                        <p className="font-thai">{about.whatWeDoDetail}</p>
                     </div>
                     <div className="md:w-[50%] w-full h-[400px] md:h-auto md:flex-1 relative">
                         <Image
@@ -40,7 +43,10 @@ const AboutPage = () => {
                 {/* value section */}
                 <section id="our-values" aria-labelledby="values-heading" className="mt-xl">
 
-                    <h2 id="values-heading" className="text-[var(--primary)] mb-sm px-sm">Our Values</h2>
+                    <h2 id="values-heading" className="text-[var(--primary)] mb-sm px-sm">
+                        Our Values
+                        <span className="font-thai"> {about.ourValues}</span>
+                    </h2>
 
                     <div className="cardContainer">
                         {ourValues.map((item, index) => (
@@ -60,13 +66,13 @@ const AboutPage = () => {
                 <div className="innerContainer flex flex-col md:flex-row">
                     {/* left column */}
                     <div className="w-full md:w-[50%] flex flex-col p-sm gap-sm">
-                        <h2 className="text-[var(--primary)]">{about.whyUs}</h2>
-                        <p>{about.whyUsDetail}</p>
+                        <h2 className="font-thai text-[var(--primary)]">{about.whyUs}</h2>
+                        <p className="font-thai">{about.whyUsDetail}</p>
 
                         <div className="flex h-[400px] md:h-auto md:flex-1 relative">
                             <div className="w-[50%] relative">
                                 <Image
-                                    src="/images/image-024.png?=v2"
+                                    src="/images/my-shots/my-shot-020.jpg"
                                     alt="later"
                                     fill
                                     className="object-cover overflow-hidden"
@@ -74,7 +80,7 @@ const AboutPage = () => {
                             </div>
                             <div className="w-[50%] relative">
                                 <Image
-                                    src="/images/image-019.jpg"
+                                    src="/images/my-shots/my-shot-014.jpg"
                                     alt="later"
                                     fill
                                     className="object-cover overflow-hidden"
@@ -85,12 +91,12 @@ const AboutPage = () => {
 
                     {/* right column */}
                     <div className="w-full md:w-[50%] flex flex-col p-sm gap-sm">
-                        <h2 className="text-[var(--primary)]">Who We Serve</h2>
+                        <h2 className="font-thai text-[var(--primary)]">ลูกค้าของเรา</h2>
                         <ul className="flex flex-col gap-sm">
                         {whoWeServe.map((item, index) => (
                             <li 
                                 key={index}
-                                className="p-xs bg-[var(--bgMain)]"
+                                className="font-thai p-xs bg-[var(--bgMain)]"
                             >{item.client}</li>
                         ))}
                         </ul>

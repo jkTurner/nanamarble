@@ -4,8 +4,16 @@ import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import { seoData } from "@/data/SeoData";
+import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ['latin'] });
+
+const aktiv = localFont({
+	src: '../fonts/Aktiv_Grotesk_Thai.otf',
+	weight: '400',
+	style: 'normal',
+	variable: '--font-aktiv',
+  })
 
 export const metadata: Metadata = {
 	title: seoData.indexTitle,
@@ -33,8 +41,9 @@ export default function RootLayout({
 }>) {
   return (
 
-		<html lang="en">
-			<body className={`${inter.className} antialiased`}>
+		<html lang="th" className={`${inter.className} ${aktiv.variable} antialiased`}>
+			{/* <body className={`${inter.className} antialiased`}> */}
+			<body>
 				<div className="mainLayout">
 					<Header />
 					<div className="mainLayout min-h-[70vh]">

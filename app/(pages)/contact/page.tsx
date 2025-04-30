@@ -1,3 +1,4 @@
+import ContactForm from "@/app/components/form/ContactForm";
 import { contactData, faqsData } from "@/data/SiteData";
 
 
@@ -7,76 +8,8 @@ const ContactPage = () => {
             
             {/* contact form & info section */}
             <section aria-labelledby="contact-heading" className="flex flex-col w-full max-w-[var(--desktop)] gap-md mx-auto">
-                <h1 id="contact-heading" className="px-sm">Contact Us</h1>
-                <div className="flex flex-col md:flex-row w-full gap-md">
-                    <form
-                        aria-labelledby="Contact Form"
-                        className="flex flex-col gap-sm p-sm bg-[var(--secondary)] w-full md:w-[50%]"
-                    >
-                        <label htmlFor="fullName" className="sr-only">Full Name</label>
-                        <input 
-                            id="fullName" 
-                            type="text" 
-                            name="fullName" 
-                            placeholder="Full Name"
-                            className="text-[var(--textLight)] border-b border-[var(--textKill)]
-                            focus:border-[var(--primary)] flex-1 py-3 text-sm" 
-                        />
-                        <label htmlFor="email" className="sr-only">Email</label>
-                        <input 
-                            id="email" 
-                            type="text" 
-                            name="email" 
-                            placeholder="Email Address"
-                            className="text-[var(--textLight)] border-b border-[var(--textKill)]
-                            focus:border-[var(--primary)] flex-1 py-3 text-sm" 
-                        />
-                        <label htmlFor="message" className="sr-only">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            placeholder="Message..."
-                            rows={6}
-                            className="text-[var(--textLight)] bg-[var(--bgMain)] p-sm text-sm"
-                        />
-                        <div className="self-end">
-                            <button 
-                                type="submit" 
-                                className="py-1 px-6 bg-[var(--primary)] text-[var(--secondary)] text-sm font-light cursor-pointer"
-                                >Send</button>
-                        </div>
-                    </form>
-
-                    {/* contact info */}
-                    <div className="flex flex-col gap-sm flex-1 pl-sm pr-sm md:pl-0">
-                        <p>{contactData.intro}</p>
-                        <div className="flex flex-col gap-sm">
-                            <h2 className="font-semibold">Contact Info</h2>
-                            <div>
-                                <p>Phone: {contactData.phoneNumber}</p>
-                                <p>Email: {contactData.email}</p>
-                                <p>Website: {contactData.url}</p>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col gap-sm">
-                            <h2 className="font-semibold">Address</h2>
-                            <div>
-                                <p>{contactData.businessName}</p>
-                                <p>{contactData.address}</p>
-                            </div>
-                        </div>
-                        
-                        <div className="flex flex-col gap-sm">
-                            <h2 className="font-semibold">Opening Hours</h2>
-                            <div>
-                                <p>{contactData.workHours}</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
+                <h1 id="contact-heading" className="px-sm">Contact Us <span className="font-thai">(ติดต่อเรา)</span></h1>
+                <ContactForm />
             </section>
 
             {/* FAQs and map section */}
@@ -86,12 +19,15 @@ const ContactPage = () => {
                     
                 {/* FAQs */}
                     <div className="w-full md:w-[50%] flex flex-col gap-sm">
-                        <h2 id="faqs-heading" className="px-sm text-[var(--primary)] font-semibold">FAQs</h2>
+                        <h2 id="faqs-heading" className="px-sm text-[var(--primary)] font-semibold">
+                            FAQs
+                            <span className="font-thai font-medium"> (คำถามที่พบบ่อย)</span>
+                        </h2>
 
                         {faqsData.map((item, index) => (
-                            <div key={index} className="p-sm bg-[var(--bgMain)]">
-                                <h3 className="font-semibold">{item.question}</h3>
-                                <p>{item.answer}</p>
+                            <div key={index} className="flex flex-col gap-xs p-sm bg-[var(--bgMain)]">
+                                <h3 className="font-thai font-medium">{item.question}</h3>
+                                <p className="font-thai">{item.answer}</p>
                             </div>
                         ))}
                     </div>
@@ -108,8 +44,11 @@ const ContactPage = () => {
                             className=""
                         />
                         <div className="self-end">
-                            <a href={contactData.mapLink} target="_blank" className="px-4 py-1 bg-[var(--primary)] text-[var(--secondary)] text-sm font-light">
-                                Get Direction
+                            <a 
+                                href={contactData.mapLink} 
+                                target="_blank" 
+                                className="font-thai text-xs pt-3 pb-2 px-5 bg-[var(--primary)] text-[var(--secondary)] font-light">
+                                หาเส้นทาง
                             </a>
                         </div>
                     </div>

@@ -15,13 +15,13 @@ const Footer = () => {
                     <h4 className="text-md font-semibold">NANA MARBLE</h4>
 
                     <div>
-                        <h4>{contactData.businessName}</h4>
-                        <span className="font-light text-xs">{contactData.address}</span>
+                        <h4 className="font-thai">{contactData.businessName}</h4>
+                        <span className="font-thai font-light text-xs">{contactData.address}</span>
                     </div>
 
                     <div>
-                        <h4 className="font-light text-xs">{contactData.phoneNumber}</h4>
-                        <span className="font-light text-xs">{contactData.workHours}</span>
+                        <h4 className="font-light text-xs">Phone: {contactData.phoneNumber}</h4>
+                        <span className="font-thai font-light text-xs">{contactData.workHours}</span>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
                     <Navbar />
                     <div className="flex flex-col text-xs font-light md:items-end items-center">
                         <span>© Nana Marble Inc. All rights reserved</span>
-                        <span className="text-xs">By JK Turner Fullstack</span>
+                        <span className="text-xs">By Jakkrit Turner</span>
                     </div>
                 </div>
 

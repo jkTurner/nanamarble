@@ -13,7 +13,8 @@
 	--text-sm: 16px;
 	--text-md: 18px;
 	--text-lg: 24px;
-	--text-xl: 40px;
+	--text-xl: 32px;
+	--text-2xl: 40px;
 
 	--spacing-xxs: 8px;
 	--spacing-xs: 18px;
@@ -26,6 +27,22 @@
 
 	--breakpoint-desktop: 1280px;
 }
+
+@tailwind utilities;
+/* globals.css */
+
+/* @layer utilities {
+	.bg-\[var\(--primary\)\] {content: "";}
+	.bg-\[var\(--secondary\)\] {content: "";}
+	.bg-\[var\(--accent\)\] {content: "";}
+  
+	.text-\[var\(--primary\)\] {content: "";}
+	.text-\[var\(--secondary\)\] {content: "";}
+	.text-\[var\(--accent\)\] {content: "";}
+  
+	.hover\:bg-\[var\(--accent\)\]:hover {content: "";}
+} */
+  
 
 :root {
 	--primary: #171717;
@@ -40,7 +57,8 @@
 	--text-sm: 16px;
 	--text-md: 18px;
 	--text-lg: 24px;
-	--text-xl: 40px;
+	--text-xl: 32px;
+	--text-2xl: 40px;
 
 	--weight-extralight: 200;
 	--weight-light: 300;
@@ -62,6 +80,18 @@
 }
 
 @layer base {
+	/* html:lang(en) {
+		font-family: var(--font-inter), sans-serif;
+	  }
+	  
+	  html:lang(th) {
+		font-family: var(--font-aktiv), sans-serif;
+	  } */
+
+	.font-thai {
+		font-family: var(--font-aktiv), sans-serif;
+	}
+
 	body {
 		background-color: var(--bgMain);
 		color: var(--primary);
@@ -69,7 +99,7 @@
 	}
 	p, li {
 		color: var(--textLight);
-		font-size: var(--text-xs);
+		font-size: var(--text-sm);
 	}
 	h1 {
 		font-size: var(--text-lg);
@@ -103,32 +133,6 @@
   }
 }
 
-.mainLayout {
-	width: 100%;
-	margin-inline: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.cardContainer {
-	width: 100%;
-	max-width: 1280px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-	gap: var(--spacing-sm);
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
-.innerContainer {
-	width: 100%;
-	max-width: var(--desktop);
-	margin-inline: auto;
-}
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -139,4 +143,70 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+
+/* classes */
+.mainLayout {
+	width: 100%;
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.innerContainer {
+	width: 100%;
+	max-width: var(--desktop);
+	margin-inline: auto;
+}
+
+.cardContainer {
+	width: 100%;
+	max-width: 1280px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+	gap: var(--spacing-sm);
+}
+
+.overflowUnset {
+	overflow-clip-margin: unset;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+/* Effects */
+.fadeInItem {
+    opacity: 0;
+    animation: fadeInEffect 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.imageZoom {
+	opacity: 0;
+	animation: zoomInEffect 1.2s ease-out forwards;
+	overflow: hidden;
+}
+@keyframes zoomInEffect {
+	0% {
+		opacity: 0;
+		transform: scale(1.05) translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
 }

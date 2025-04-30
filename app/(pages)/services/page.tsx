@@ -17,8 +17,8 @@ const ServicesPage = () => {
 
                 {/* intro */}
                 <div className="flex flex-col w-full gap-sm px-sm mb-sm">
-                    <h1 className="text-lg">OUR SERVICES</h1>
-                    <p>{serviceData.intro}</p>
+                    <h1 className="text-lg">Our Services <span className="font-thai text-">(บริการของเรา)</span></h1>
+                    <p className="font-thai">{serviceData.intro}</p>
                 </div>
 
                 {/* service cards section */}
@@ -27,7 +27,7 @@ const ServicesPage = () => {
                     <div className="w-full md:w-[400px] flex flex-col gap-sm">
                         {serviceDetails.map((item, index) => (
                             <article key={index}>
-                                <ServiceCard topic={item.name} detail={item.detail} />
+                                <ServiceCard topic={item.name} topicEn={item.nameEn} detail={item.detail} />
                             </article>
                         ))}
                     </div>
@@ -35,7 +35,7 @@ const ServicesPage = () => {
                     {/* image */}
                     <div className="w-full h-[400px] md:h-auto md:flex-1 relative">
                         <Image
-                            src="/images/image-009.jpg"
+                            src="/images/my-shots/my-shot-015.jpg"
                             alt="Modern marble kitchen with under-lighting and polished surfaces"
                             fill
                             priority
@@ -52,7 +52,7 @@ const ServicesPage = () => {
                 <div className="flex flex-col w-full gap-sm py-xl">
                     <div className="flex flex-col gap-sm px-sm">
                         <h2 id="portfolio-heading" className="text-lg">PORTFOLIO</h2>
-                        <p>{serviceData.intro}</p>
+                        <p className="font-thai">{serviceData.portfolio}</p>
                     </div>
 
                     <div className="cardContainer mt-sm">

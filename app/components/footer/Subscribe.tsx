@@ -12,7 +12,7 @@ const Subscribe = () => {
                     className="w-full px-sm py-[14px] text-[var(--primary)] text-xs
                     placeholder:text-[var(--textLight)] bg-[var(--secondary)] outline-none"
                 />
-                <MainButton name="Submit" background="var(--accent)" color="var(--secondary)" />
+                <MainButton name="Submit" background="bg-[var(--accent)]" color="text-[var(--secondary)]" />
             </div>
         </div>
     )
