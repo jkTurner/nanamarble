@@ -1,15 +1,14 @@
-
-
 export const seoData = {
-    indexTitle: "Nana Marble | Premium Marble Supplier in Chiang Mai",
-    indexDescription: "Explore premium marble designs, finishes, and expert craftsmanship with Nana Marble. Trusted in Chiang Mai and beyond for timeless beauty and professional service.",
-
-    servicesTitle: "Our Services | Premium Marble Supply & Installation – Nana Marble",
-    servicesDescription: "Explore Nana Marble's expert services in premium marble supply, precision cutting, custom finishing, and professional installation. From luxury homes to commercial spaces, we help bring your vision to life with timeless stone solutions.",
-
-    aboutTitle: "About Nana Marble | Trusted Marble Supplier in Chiang Mai",
-    aboutDescription: "Discover Nana Marble, a leading marble supplier based in Chiang Mai with over 25 years of experience. Learn about our values, services, and what makes us a trusted name in premium marble across Thailand.",
-
-    contactTitle: "Contact Us | Nana Marble Chiang Mai Showroom & Support",
-    contactDescription: "Get in touch with Nana Marble for marble inquiries, quotes, or project consultations. Visit our Chiang Mai showroom or reach us via phone or email today.",
-}
+    indexTitle: "นานาหินอ่อน เชียงใหม่ | ครบวงจรหินอ่อน หินแกรนิต หินเทียม สำหรับทุกงานตกแต่ง",
+    indexDescription: "นานาหินอ่อน เชียงใหม่ – จำหน่ายและติดตั้งหินอ่อน หินแกรนิต และหินเทียมหลากหลายประเภท รองรับทั้งงานตกแต่งภายในและภายนอก เช่น ผนัง บันได พื้น และเคาน์เตอร์ พร้อมให้คำแนะนำที่เหมาะสมกับงบประมาณและสไตล์ของลูกค้าในเชียงใหม่และพื้นที่ใกล้เคียง",
+  
+    servicesTitle: "บริการหินอ่อน หินแกรนิต และหินเทียม | นานาหินอ่อน เชียงใหม่ – ตอบโจทย์ทุกงานตกแต่ง",
+    servicesDescription: "สำรวจบริการจากนานาหินอ่อน – เราจัดจำหน่ายและติดตั้งหินอ่อน หินแกรนิต และหินเทียมทุกรูปแบบ ทั้งราคาประหยัดและระดับพรีเมียม ไม่ว่าจะเป็นบันได ผนัง เคาน์เตอร์ หรือพื้น ทีมงานพร้อมให้คำแนะนำที่เหมาะสมกับทุกความต้องการของลูกค้าในเชียงใหม่",
+  
+    aboutTitle: "นานาหินอ่อน | ผู้เชี่ยวชาญหินอ่อนเชียงใหม่ – งานตกแต่งภายในทุกรูปแบบ",
+    aboutDescription: "นานาหินอ่อน เชียงใหม่ – ผู้ให้บริการหินอ่อนหลากหลายประเภทสำหรับงานตกแต่งภายใน เช่น เคาน์เตอร์ บันได ผนัง และพื้น ด้วยทีมงานมืออาชีพและประสบการณ์ยาวนาน พร้อมให้คำปรึกษาและออกแบบตรงตามความต้องการของลูกค้าในเชียงใหม่และพื้นที่ใกล้เคียง",
+  
+    contactTitle: "ติดต่อ นานาหินอ่อน | ผู้ให้บริการหินอ่อน หินแกรนิต หินเทียม ในเชียงใหม่",
+    contactDescription: "ติดต่อ นานาหินอ่อน เชียงใหม่ – เราให้บริการหินอ่อน หินแกรนิต และหินเทียมสำหรับงานตกแต่งภายในและภายนอก ทีมงานพร้อมให้คำแนะนำและบริการติดตั้งครบวงจร สำหรับลูกค้าในจังหวัดเชียงใหม่และพื้นที่ใกล้เคียง",
+  }
+  
