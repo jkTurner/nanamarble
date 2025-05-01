@@ -90,7 +90,7 @@ export const aboutData = {
     whoWeAreDetail: "นานาหินอ่อนเป็นร้านหินอ่อนเชียงใหม่ ก่อตั้งขึ้นและดำเนินธุรกิจมานานกว่า 30 ปี เราเริ่มต้นจากการเป็นผู้จำหน่ายหินธรรมชาติในท้องถิ่น และเติบโตมาเป็นหนึ่งในแหล่งจำหน่ายหินที่ได้รับความไว้วางใจที่สุดในพื้นที่ ด้วยความตั้งใจในการคัดสรรวัสดุคุณภาพดีในราคาถูก และเหมาะแก่การตกแต่งก่อสร้างบ้านและอาคารทุกประเภท ด้วยประสบการณ์ที่มากกว่า บริการที่ใส่ใจทุกรายละเอียด เราช่วยเนรมิตพื้นที่ต่างๆทั่วทั้งเชียงใหม่ให้สวยงาม โดดเด่น และมีเอกลักษณ์ที่ต้องจดจำ",
     whoWeAreDetailEn: "Founded in the heart of Chiang Mai over 25 years ago, Nana Marble has grown from a small local supplier into one of Thailand’s most trusted names in premium marble. From family homes to large-scale developments, we’ve helped shape beautiful spaces with the timeless elegance of natural stone.",
     whatWeDo: "(สิ่งที่เราทำ)",
-    whatWeDoEn: "What Wo Do",
+    whatWeDoEn: "What We Do",
     whatWeDoDetail: "ที่นานาหินอ่อนเราเชี่ยวชาญในการจัดหา ตัดแต่ง เจียร และติดตั้งทั้งหินธรรมชาติ หินสังเคราะห์ และหินเทียม สำหรับที่อยู่อาศัย ร้านค้า และโครงการเฉพาะทางทุกรูปแบบ เราทำงานในทุกรายละเอียดด้วยความประณีตและความทุ่มเท เพื่อส่งมอบผลงานที่ตรงกับความต้องการของลูกค้าทุกท่าน",
     whatWeDoDetailEn: "At Nana Marble, we specialize in the sourcing, cutting, finishing, and installation of high-quality marble for residential, commercial, and custom projects. Whether it’s a luxury hotel lobby or a private kitchen countertop, we approach each project with the same dedication to quality, craftsmanship, and service.",
     ourValues: "(คุณค่าของเรา)",
