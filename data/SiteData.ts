@@ -10,6 +10,13 @@ export const heroData = {
     ctaDetail: "สร้างพื้นที่ในฝันของคุณด้วยหินธรรมชาติคุณภาพเยี่ยมจากร้านนานาหินอ่อน เราเป็นร้านหินอ่อนเชียงใหม่ที่เปิดให้บริการมานานกว่า 30 ปี พร้อมบริการครบวงจร ตั้งแต่การคัดสรรหิน การตัดแต่งเฉพาะงาน ไปจนถึงการติดตั้งอย่างพิถีพิถัน ให้ทุกมุมของบ้านและโครงการของคุณเปล่งประกายด้วยความงดงามเหนือกาลเวลา",
 }
 
+export const fourPointsData = [
+    "คุณภาพที่สัมผัสได้",
+    "หลากชนิดเพื่องานทุกประเภท",
+    "เข้าใจทุกความต้องการ",
+    "อยู่คู่เชียงใหม่มากว่า 30 ปี",
+]
+
 export const serviceData = {
     intro: "ที่นานาหินอ่อน เราเป็นมากกว่าผู้จัดจำหน่ายหินและหินอ่อนคุณภาพ แต่เรายังให้บริการแบบครบวงจร ไม่ว่าคุณลูกค้าต้องการใช้หินเพื่อสร้างบ้าน พื้นที่เชิงพาณิชย์ หรือผลงานศิลปะต่างๆ ทีมงานของเราพร้อมให้คำแนะนำ ผลิต และประสานงานด้วยความใส่ใจและความแม่นยำในทุกรายละเอียด เมื่อพูดถึงหินอ่อนเชียงใหม่ เราพูดถึงนานาหินอ่อน",
     introEn: "At Nana Marble, we go beyond supplying premium marble — we provide tailored services to ensure every slab finds its perfect place. Whether you’re building a luxurious home, a commercial space, or an artistic installation, our team is here to guide, craft, and deliver with care and precision.",

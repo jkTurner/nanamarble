@@ -168,6 +168,13 @@ select:-webkit-autofill:focus {
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
 	gap: var(--spacing-sm);
 }
+.badgeContainer {
+	width: 100%;
+	max-width: 1280px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: var(--spacing-sm);
+}
 
 .overflowUnset {
 	overflow-clip-margin: unset;
