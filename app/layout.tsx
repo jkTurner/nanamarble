@@ -44,7 +44,7 @@ export default function RootLayout({
 		<html lang="th" className={`${inter.className} ${aktiv.variable} antialiased`}>
 			{/* <body className={`${inter.className} antialiased`}> */}
 			<body>
-				<div className="mainLayout">
+				<div className="mainLayout overflow-hidden relative">
 					<Header />
 					<div className="mainLayout min-h-[70vh]">
 						{children}

@@ -2,6 +2,8 @@ import HeroBanner from "./components/banner/HeroBanner";
 import ServiceBanner from "./components/banner/ServiceBanner";
 import { fourPointsData, heroData as hero } from "@/data/SiteData";
 import BadgeCard from "./components/ui/card/BadgeCard";
+import MainButton from "./components/ui/button/MainButton";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -24,9 +26,12 @@ export default function Home() {
 				{/* CTA Text */}
 				<div className="w-full max-w-[600px] mx-auto text-center justify-center flex flex-col gap-sm">
 					<h2 className="font-thai text-lg px-sm">{hero.ctaTopic}</h2>
-					<div className="flex flex-col gap-xs px-sm">
+					<div className="flex flex-col gap-sm px-sm">
 						<p className="font-thai">{hero.ctaDetail}</p>
-						<span className="text-lg text-[var(--textLight)]">. . . .</span>
+						{/* <span className="text-lg text-[var(--textLight)] mb-xs">. . . .</span> */}
+						<Link href="/contact">
+							<MainButton name="ช่องทางการติดต่อ" />
+						</Link>
 					</div>
 				</div>
 			</div>
