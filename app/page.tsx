@@ -15,7 +15,9 @@ export default function Home() {
 				{/* 4 Points */}
 				<div className="badgeContainer">
 					{fourPointsData.map((item, index) => (
-						<BadgeCard key={index} name={item} />
+						<div key={index} className="flex-1 w-full fadeInItem" style={{ animationDelay: `${index * 0.25}s`}}>
+							<BadgeCard name={item} />
+						</div>
 					))}
 				</div>
 
