@@ -3,7 +3,6 @@ import ServiceCard from "@/app/components/ui/card/ServiceCard";
 import { portfolioData, serviceData, serviceDetails } from "@/data/SiteData";
 import Image from "next/image";
 
-
 const ServicesPage = () => {
     return (
         <main 
@@ -26,7 +25,11 @@ const ServicesPage = () => {
 
                     <div className="w-full md:w-[400px] flex flex-col gap-sm">
                         {serviceDetails.map((item, index) => (
-                            <article key={index}>
+                            <article 
+                                key={index} 
+                                className={`fxSlideLeft`}
+                                style={{ animationDelay: `${index * 0.25}s`}}
+                            >
                                 <ServiceCard topic={item.name} topicEn={item.nameEn} detail={item.detail} />
                             </article>
                         ))}
@@ -39,7 +42,7 @@ const ServicesPage = () => {
                             alt="Modern marble kitchen with under-lighting and polished surfaces"
                             fill
                             priority
-                            className="object-cover overflow-hidden"
+                            className="object-cover overflow-hidden fadeInItem"
                         />
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import { heroData as hero } from "@/data/SiteData";
 
 export default function Home() {
 	return (
-		<div className="w-full flex flex-col gap-3xl md:my-3xl my-md">
+		<div className="w-full flex flex-col gap-3xl md:my-3xl">
 
 			<HeroBanner />
 

@@ -1,0 +1,12 @@
+.serviceCardContainer {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 50;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateX(0);
+}
+.serViceCardContainerHidden {
+    opacity: 0;
+    transform: translateX(50px); /* or however far you want */
+    pointer-events: none;
+}

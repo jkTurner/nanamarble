@@ -7,7 +7,7 @@ const AboutPage = () => {
         <main 
             id="about"
             aria-labelledby="about-heading"
-            className="mt-xl flex flex-col gap-xl"
+            className="flex flex-col gap-xl mt-xl"
         >
             <div className="innerContainer">
 
@@ -34,7 +34,7 @@ const AboutPage = () => {
                             alt="later"
                             fill
                             priority
-                            className="object-cover overflow-hidden"
+                            className="object-cover overflow-hidden fadeInItem"
                         />
                     </div>
 
@@ -50,7 +50,7 @@ const AboutPage = () => {
 
                     <div className="cardContainer">
                         {ourValues.map((item, index) => (
-                            <article key={index}>
+                            <article key={index} className="fadeInItem">
                                 <ServiceCard topic={item.topic} detail={item.detail} />
                             </article>
                         ))}

@@ -4,7 +4,7 @@ import { contactData, faqsData } from "@/data/SiteData";
 
 const ContactPage = () => {
     return (
-        <main className="w-full mt-xl flex flex-col gap-xl">
+        <main className="w-full flex flex-col gap-xl mt-md">
             
             {/* contact form & info section */}
             <section aria-labelledby="contact-heading" className="flex flex-col w-full max-w-[var(--desktop)] gap-md mx-auto">

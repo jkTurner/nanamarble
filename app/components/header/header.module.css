@@ -26,3 +26,49 @@
 .navItem a:hover::after {
     transform: scaleX(1);
 }
+
+.mobileMenuContainer {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 360px;
+    height: 48px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 0 16px 0 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--accent);
+    font-size: 16px;
+    font-weight: 200;
+
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 50;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateX(0);
+}
+.mobileMenuContainer:hover {
+    background-color: var(--accent);
+}
+.mobileMenuHidden {
+    opacity: 0;
+    transform: translateX(50px); /* or however far you want */
+    pointer-events: none;
+}
+.menuItem1 {
+    top: 80px;
+    transition-delay: 0s;
+}
+.menuItem2 {
+    top: 128px;
+    transition-delay: 0.1s;
+}
+.menuItem3 {
+    top: 176px;
+    transition-delay: 0.2s;
+}
+.menuItem4 {
+    top: 224px;
+    transition-delay: 0.3s;
+}

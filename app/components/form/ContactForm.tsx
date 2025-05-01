@@ -43,7 +43,7 @@ const ContactForm = () => {
                 method="POST"
                 onSubmit={handleSubmit}
                 aria-labelledby="Contact Form"
-                className="flex flex-col gap-sm p-sm bg-[var(--secondary)] w-full md:w-[50%]"
+                className="flex flex-col gap-sm p-sm bg-[var(--secondary)] w-full md:w-[50%] fadeInItem"
             >
                 <label htmlFor="fullName" className="sr-only">Full Name</label>
                 <input 
