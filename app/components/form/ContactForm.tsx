@@ -1,4 +1,5 @@
 'use client'
+import { LineIcon } from "@/assets/Icons";
 import { contactData } from "@/data/SiteData";
 import React, { useState } from "react";
 
@@ -96,16 +97,21 @@ const ContactForm = () => {
                 <div className="flex flex-col gap-sm">
                     <h2 className="font-semibold">Contact Info <span className="font-thai font-medium">(ข้อมูลการติดต่อ)</span></h2>
                     <div>
-                        <p>Phone: {contactData.phoneNumber}</p>
+                        <p>{contactData.phoneNumber}</p>
                         <p>Email: {contactData.email}</p>
                         <p>Website: {contactData.url}</p>
+
+                        <div className="flex gap-xs items-center pt-sm">
+                            <LineIcon size={36} color="#00B900" />
+                            <p>{contactData.lineId}</p>
+                        </div>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-sm">
                     <h2 className="font-semibold">Address <span className="font-thai font-medium">(ที่อยู่)</span></h2>
                     <div>
-                        <p>{contactData.businessName}</p>
+                        <p>{contactData.businessName} {contactData.lineId}</p>
                         <p className="font-thai">{contactData.address}</p>
                     </div>
                 </div>

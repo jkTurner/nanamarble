@@ -51,3 +51,35 @@ export const CheckBadgeIcon = ({ size = 24, color = "var(--primary)", ...props }
 		</svg>
   );
 };
+
+
+export const LineIcon = ({
+	size = 24,
+	color = "var(--primary)",
+	...props
+  }: IconProps) => {
+	return (
+	  <svg
+		width={size}
+		height={size}
+		viewBox="0 0 512 512"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+		{...props}
+	  >
+		<rect width="512" height="512" rx="15%" fill={color} />
+		<path
+		  d="M443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 21-47-20-52-88-12-155-74-155-147 0-82 85-150 188-150s189 68 186 150z"
+		  fill="#fff"
+		/>
+		<path
+		  d="M371 232h-34m34-36h-36v72h36m-123 0v-72l54 72v-72m-89 72v-72m-66 0v72h37"
+		  stroke={color}
+		  strokeLinecap="round"
+		  strokeLinejoin="round"
+		  strokeWidth="21"
+		  fill="none"
+		/>
+	  </svg>
+	);
+  };

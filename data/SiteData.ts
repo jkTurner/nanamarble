@@ -156,6 +156,7 @@ export const contactData = {
     addressEn: " Q262+V47, Tambon Chang Khlan, Mueang Chiang Mai District, Chiang Mai 50100",
     email: "puaynana1964@gmail.com",
     phoneNumber: "0824566059",
+    lineId: "puaynana",
     workHours: "วันจันทร์ถึงเสาร์ เวลา 8:00 – 17:00 น.",
     workHoursEn: "Mon–Sat, 9:00 AM – 6:00 PM",
     url: "www.nanamarble.com",
