@@ -97,7 +97,7 @@ const ContactForm = () => {
                 <div className="flex flex-col gap-sm">
                     <h2 className="font-semibold">Contact Info <span className="font-thai font-medium">(ข้อมูลการติดต่อ)</span></h2>
                     <div>
-                        <p>{contactData.phoneNumber}</p>
+                        <p>Phone: {contactData.phoneNumber}</p>
                         <p>Email: {contactData.email}</p>
                         <p>Website: {contactData.url}</p>
 
