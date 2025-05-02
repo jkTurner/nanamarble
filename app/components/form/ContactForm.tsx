@@ -74,7 +74,7 @@ const ContactForm = () => {
                     name="message"
                     placeholder="Message... (ข้อความ)"
                     rows={6}
-                    className="text-[var(--textLight)] bg-[var(--bgMain)] p-sm text-sm"
+                    className="text-[var(--textLight)] bg-[var(--bgMain)] p-sm text-sm h-full"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
