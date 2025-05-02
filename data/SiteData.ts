@@ -152,7 +152,7 @@ export const contactData = {
     introEn: "Whether you're planning a new project, searching for the perfect stone, or simply exploring options, our team is here to help. Feel free to reach out — we’ll respond promptly to support your vision.",
     businessName: "บริษัท นานาหินอ่อน จำกัด",
     businessNameEn: "Nana Marble Co., Ltd.",
-    address: " Q262+V47 ตำบลช้างคลาน อำเภอเมือง จังหวัดเชียงใหม่ 50100",
+    address: " 42/2 ถนนช้างคลาน ตำบล ป่าแดด อำเภอเมือง เชียงใหม่ 50100",
     addressEn: " Q262+V47, Tambon Chang Khlan, Mueang Chiang Mai District, Chiang Mai 50100",
     email: "puaynana1964@gmail.com",
     phoneNumber: "0824566059",
