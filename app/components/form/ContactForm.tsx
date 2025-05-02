@@ -111,7 +111,7 @@ const ContactForm = () => {
                 <div className="flex flex-col gap-sm">
                     <h2 className="font-semibold">Address <span className="font-thai font-medium">(ที่อยู่)</span></h2>
                     <div>
-                        <p>{contactData.businessName} {contactData.lineId}</p>
+                        <p className="font-thai">{contactData.businessName} {contactData.lineId}</p>
                         <p className="font-thai">{contactData.address}</p>
                     </div>
                 </div>
